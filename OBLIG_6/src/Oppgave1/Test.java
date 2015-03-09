@@ -9,8 +9,8 @@ public class Test {
         
         ArrayList<Kort> reg = new ArrayList<Kort>();
         
-        Kort k1 = new Ansatt("Ole", "Olsen", 1234, new GregorianCalendar(2010, 4, 2), 634.64);
-        Kort k2 = new Gjest("Mari", "Olsen");
+        Kort k1 = new Ansatt("Pers", "Pullar", 1234, new GregorianCalendar(2010, 4, 2), 634.64);
+        Kort k2 = new Gjest("Per", "Pål");
         reg.add(k1);
         reg.add(k2);
 
@@ -26,7 +26,7 @@ public class Test {
         System.out.println("Er referansen den samme? " + (a == k1));
         System.out.println("Er de like? " + a.compareTo(k1));
         
-        a.setNavn("Marianne Dahl");
+        a.setNavn("Petter Dass");
         System.out.println(a);
         System.out.println(k1);
     }
